@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Morse.Code</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<center>
+	<textarea id="maininput" class="box">...././.-../.-../---</textarea>
+	<div class="row">
+		<div id="convert" class="box" onclick="convert('from')">
+			To Text
+		</div>
+		<div id="convert" class="box" onclick="convert('to')">
+			To Morse
+		</div>
+	</div>
+	<div id="play" class="box button" onclick="playCurrent()">
+		Play Beeps
+	</div>
+</center>
+</body>
+<script type="text/javascript" src="data.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
+</html>
