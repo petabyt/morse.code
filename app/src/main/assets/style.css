@@ -15,8 +15,7 @@ html, body {
 }
 
 .box:active {
-	border-right: 3px solid black;
-	border-bottom: 3px solid black;
+	border: 2px solid white;
 }
 
 #maininput {
@@ -54,4 +53,5 @@ html, body {
 
 	display: inline-block;
 	background: lightblue;
+	user-select: none;
 }

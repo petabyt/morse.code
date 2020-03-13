@@ -9,7 +9,7 @@ function playCurrent() {
 		dit: 200,
 		beep: 100,
 		char: 300,
-		word: 200
+		word: 1000
 	});
 }
 
@@ -36,6 +36,8 @@ function play(tones, timing) {
 			time += timing.dit + timing.beep;
 		} else if (tones[i] == "/") {
 			time += timing.char;
+		} else if (tones[i] == "//") {
+			time += timing.word;
 		}
 	}
 }
