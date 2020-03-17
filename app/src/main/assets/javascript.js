@@ -1,16 +1,10 @@
-
-
 function playCurrent() {
 	var code = document.getElementById('maininput').value;
 	code = split(code);
 
-	play(code, {
-		dah: 400,
-		dit: 200,
-		beep: 100,
-		char: 300,
-		word: 1000
-	});
+	var speed = document.getElementById('speed').value;
+
+	play(code, modes[speed]);
 }
 
 // Accepted in // for space and / for char
@@ -42,7 +36,7 @@ function play(tones, timing) {
 	}
 }
 
-//
+// Function to create tone
 function makeTone(length) {
 	var audio = new AudioContext();
 	var o = audio.createOscillator();
